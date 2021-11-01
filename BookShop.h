@@ -29,6 +29,8 @@ public:
 
     void removeThing(Thing *thing);
 
+    void removeLastThing();
+
     void saveFile() const;
 
     void loadFile();

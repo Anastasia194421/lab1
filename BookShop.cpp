@@ -78,6 +78,12 @@ void BookShop::removeThing(Thing *thing) {
     }
 }
 
+void BookShop::removeLastThing() {
+    delete things[size-1];
+    size--;
+}
+
+
 void BookShop::saveFile() const {
     std::ofstream fout;
     fout.open("things.txt");
